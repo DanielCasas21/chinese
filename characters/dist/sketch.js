@@ -28,7 +28,6 @@ function touchMoved() {
 stroke(255);
 strokeWeight(15);
 line(mouseX, mouseY, pmouseX, pmouseY);
-return false;
 }
 
 function resetSketch(){
