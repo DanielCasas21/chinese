@@ -24,12 +24,11 @@ line(0, 400, 400, 0);
 line(0, 0, 400, 400);
 }
 
-function draw() {
+function touchMoved() {
 stroke(255);
-if (mouseIsPressed === true) {
-line(mouseX, mouseY, pmouseX, pmouseY);
 strokeWeight(15);
-}
+line(mouseX, mouseY, pmouseX, pmouseY);
+return false;
 }
 
 function resetSketch(){
